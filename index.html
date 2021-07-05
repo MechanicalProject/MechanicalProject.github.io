@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yunhyeok's Homepage</title>
+    <meta
+      name="description"
+      content="Homepage for software engineer Yunhyeok Jo"
+    />
+    <meta name="author" content="Yunhyeok" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/f9a35c49ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="imgs/favicon.png" />
+        <a href="#">Yunhyeok</a>
+      </div>
+      <div class="navbar__menu close">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My Work</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
+      <!-- Toggle Button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+        src="imgs/profile.png"
+        alt="Yunhyeok's profile photo"
+        class="home__avatar"
+        />
+        <h1 class="home__title">Hello,<br />I'm Yunhyeok Jo</h1>
+        <h3 class="home__description">We first make our habits, and then our habits make us
+        <br>- John Dryden -</h3>
+        <button class="home__contact" data-link = '#contact'>Contact Me</button>
+      </div>
+    </section>
+    
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        학부 시절 기계공학을 전공했고, 졸업 후 현재까지 삼성전자 DS
+        생산기술연구소에서 개발 업무를 하고 있습니다. 입사 후 프론트엔드
+        업무(2017.08 ~ 2020.01)를 하다가, 현재는 백엔드 업무(2020.01 ~ )를 하고
+        있습니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon"><i class="fab fa-windows"></i></div>
+          <h2 class="major__title">Front-end</h2>
+          <p class="major__description">C# (WPF, WinForm),
+          <br/>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="major">
+          <div class="major__icon"><i class="fas fa-server"></i></i></div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">Java, JavaScript, 
+          <br/>Oracle, Linux</p>
+        </div>
+        <div class="major">
+          <div class="major__icon"><i class="fas fa-cogs"></i></div>
+          <h2 class="major__title">Mechanical</h2>
+          <p class="major__description">열역학, 유체역학, 
+          <br/>고체역학, 동역학</p>
+        </div>
+      </div>
+      <div class="about__careers">
+        <div class="career">
+          <img src="imgs/careers/skku-logo.png" alt="Skku" class="career__logo">
+          <div class="career__description">
+            <p class="career__name">B.Mechanical Engineering, Sungkyunkwan Univ.</p>
+            <p class="career__period">2011.03 ~ 2017.08</p></div>
+        </div>
+        <div class="career">
+          <img src="imgs/careers/samsung-logo.png" alt="samsung" class="career__logo">
+          <div class="career__description">
+            <p class="career__name">Front-end, Mechatronics R&D Center, Samsung Electronics</p>
+            <p class="career__period">2017.08 ~ 2020.01</p>
+          </div> 
+        </div>
+        <div class="career">
+          <img src="imgs/careers/samsung-logo.png" alt="samsung" class="career__logo">
+          <div class="career__description">
+            <p class="career__name">Back-end, Mechatronics R&D Center, Samsung Electronics</p>
+            <p class="career__period">2020.01 ~ now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          새로운 기술을 배우고 공부하는 것에 흥미가 있습니다. 부족한 점을 스스로 채우려고 합니다. 나태해지는 것을 싫어하고, 끊임없이 자기 개발을 하는 것을 인생의 목표로 하고 있습니다.
+        </p>
+        <div class="skillSet">
+          <div class="skillSet__left">
+            <h3 class="skillSet__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>C#(WPF)</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Java</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Oracle</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML & CSS</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill">
+              <div class="skill__description">
+                <span>Design Pattern</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillSet__right">
+            <div class="tools">
+              <h3 class="skillSet__title">Tools</h3>
+              <ul>
+                <li><span>Visual Studio</span></li>
+                <li><span>Eclipse</span></li>
+                <li><span>Oracle SQL Developer</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Enterprise Architect</span></li>
+              </ul>
+            </div>
+            
+            <div class="etc">
+              <h3 class="skillSet__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Jira & Confluence</span></li>
+                <li><span>Git</span></li>
+                <li><span>Software Design</span></li>
+                <li><span>Mechanical Engineering</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn active" data-filter="*">All<span class="category__count">4</span></button>
+          <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">2</span></button>
+          <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">1</span></button>
+          <button class="category__btn" data-filter="mechanical-engineering">Mechanical Engineering<span class="category__count">1</span></button>
+        </div>
+        
+        <div class="work__projects">
+          <a href="#" class="project" target="_blank" data-type="front-end">
+            <img src="imgs/projects/adder.png" alt="Particles Adder" class = "project__img">
+            <div class="project__description">
+              <h3>Particle Analysis System</h3>
+              <span>1) WPF를 활용한 분석 시스템 기능 구현
+              <br>2) Adder 알고리즘 개발
+              <br>3) 디자인패턴으로 확장성 증대</span>
+            </div>
+          </a>
+          
+          <a href="#" class="project" target="_blank" data-type="back-end">
+            <img src="imgs/projects/file_collector.png" alt="File Collector" class = "project__img">
+            <div class="project__description">
+              <h3>File Collector System</h3>
+              <span>1) Java를 활용해서 파일 수집 기능 구현
+              <br>2) 디자인패턴으로 확장성 증대</span>
+            </div>
+          </a>
+          
+          <a href="#" class="project" target="_blank" data-type="front-end">
+            <img src="imgs/projects/log.png" alt="Log Viewer System" class = "project__img">
+            <div class="project__description">
+              <h3>Log Viewer System</h3>
+              <span>1) WPF를 활용한 로그 뷰어 기능 구현
+              <br>2) 디자인패턴으로 확장성 증대</span>
+            </div>
+          </a>
+          
+          <a href="#" class="project" target="_blank" data-type="mechanical-engineering">
+            <img src="imgs/projects/arduino.png" alt="Auto Detection Private Parking Bar" class = "project__img">
+            <div class="project__description">
+              <h3>Auto Detection Private Parking Bar</h3>
+              <span>1) 아두이노 활용한 자동 주차봉 제작
+              <br>2) 센서 신호 처리로 거리 측정 및 특정 자동차만 주차 가능하도록 제작
+              <br>3) 기계공학 지식 및 프로그래밍을 통해 실제 제품 제작</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class = "contact__title">Let's talk</h1>
+      <h2 class="contact__email">abdbscd@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/MechanicalProject" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yunhyeok-jo-6b638b1bb/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        Yunhyeok's Homepage - All rights reserved
+      </p>
+    </section>
+    
+    <!-- Arrow up -->
+    <button class="arrow-up" >
+      <i class="fas fa-arrow-up" data-link ="#home"></i>
+    </button>
+  </body>
+</html>
